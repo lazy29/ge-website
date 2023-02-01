@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* ############################## html element styling ############################## */
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+
+
+/* ############################## utility classes ############################## */
+
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bg-dark{
+    background-color: #24272A;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #DF3703;
+    /* color: #803303; */
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #050709;
+}
+
+.text-grey{
+    color: #3A3B3E;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color: #f4f4f4;
+    border-radius: 10em;
+}
+
+.btn-primary:hover{
+    background-color: #d0d0d0;
+}
+
+.btn-secondary{
+    border: 2px solid #DF3703;
+    border-radius: 1.5em;
+    background-color: #f4f4f4;
+}
+
+.btn-secondary:hover{
+    background-color: #fcf3f2;
+}
+
+
+
+
+/* ############################## header styling ############################## */
+
+.header{
+    position: relative;
+    height: 96vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../img/karsten-wurth-7BjhtdogU3A-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.navbar{
+    /* border: 4px solid white; */
+    padding: 1em;
+}
+
+.navbar .logo{
+    float: left;
+}
+
+.navbar .nav-items{
+    float: right;
+    margin-top: 1em;
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 0.45em 1em;
+    text-transform: uppercase;
+    /* border: 1px solid wheat; */
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a{
+    padding-bottom: 0.2em;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ############################## header content ############################## */
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0, 0.03), rgba(0,0,0, 0.03));
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p{
+    text-transform: capitalize;
+}
+
+
+
+
+/* ############################## showcase section styling ############################## */
+
+
+
+
+.showcase{
+    background: #C8C8C8;
+    padding: 10em 0em;
+}
+
+.row{
+    height: 350px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.411);
+}
+
+.row1{
+    margin-bottom: 10em;
+}
+
+
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row1 .text-box, .row2 .img-box{
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+    height: 100%;
+}
+
+.row .text-box{
+    padding: 3em;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+
+/* ############################## features section styling ############################## */
+
+section.features{
+    padding: 10em 0em;
+}
+
+
+.box-wrapper{
+    /* border: 2px solid black; */
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.521);    
+}
+
+.box{
+    width: 33.33%;
+    float: left;
+    padding: 2em;
+    text-align: center;
+}
+
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box1, .box3{
+    background-color: #24272A;
+    color: #f4f4f4;
+}
+
+.box2{
+    background-color: #877373;
+    color: #050709;
+}
+
+
+
+/* ############################## footer styling ############################## */
+
+
+.footer{
+    background-color: #24272A;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 2em;
+}
+
+.social-media-links i{
+    padding: 0.5em;
+}
+
+
+
+
+
+/* ############################## about styling ############################## */
+
+
+
+
+section.about{
+    background: #C8C8C8;
+    /* padding: 10em 0em; */
+}
+
+.about-heading{
+    padding-top: 1em;
+}
+
+
+
+.about-heading::after{
+    content: '';
+    display: block;
+    border: 3px solid #DF3703;
+    width: 100%;
+}
+
+
+.about .pointers{
+    text-align: center;
+    margin-top: 3em;
+}
+
+.about .pointer1{
+    float: left;
+    width: 50%;
+}
+
+.about .pointer2{
+    float: right;
+    width: 50%;
+}
+
+.about .pointers::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.pointer-item::before{
+    font: var(--fa-font-solid);
+    content: '\f00c';
+    color:#DF3703;
+    font-size: small;
+    padding-right: 0.3em;
+}
+
+
+.counts{
+    /* border: 4px solid black; */
+    margin-top: 5em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.count1{
+    float: left;
+    width: 25%;
+}
+
+.count2{
+    float: left;
+    width: 25%;
+}
+
+.count3{
+    float: left;
+    width: 25%;
+}
+
+.count4{
+    float: left;
+    width: 25%;
+}
+
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+.cta-banner{
+    /* border: 4px solid black; */
+    background-color: #877373;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 8.2em;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.521);
+}
+
+.cta-banner-left{
+    float: left;
+    width: 60%;
+}
+
+.cta-line{
+    font-size: 1.8rem;
+    padding: 1.2em;
+    font-weight: 600;
+}
+
+.cta-banner-right{
+    float: right;
+    width: 40%;
+}
+
+.cta-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cta-btn{
+    border: 4px solid #f4f4f4;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+/* ############################## contact styling ############################## */
+
+
+
+
+section.contact{
+    background-color: #C8C8C8;
+}
+
+
+
+.form-wrapper{
+    /* border: 4px solid red; */
+    padding: 5em 0em;
+}
+
+.address{
+    /* border: 2px solid green; */
+    float: left;
+    width: 49%;
+    text-align: center;
+    background-color: white;
+    padding-top: 0.5em;
+    height: 645px;
+}
+
+.form{
+    /* border: 2px solid blue; */
+    float: right;
+    width: 49%;
+    background-color: white;
+    padding: 0.5em 1em;
+    height: 645px;
+}
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-wrapper .contact-image img{
+    display: inline-block;
+    width: 98%;
+    object-fit: cover;
+    border: 1px solid #050709;
+}
+
+.form-wrapper .address i{
+    padding-right: 0.5em;
+    color: #DF3703;
+}
+
+.address h2{
+    display: inline-block;
+}
+
+
+.form h1::after{
+    content: '';
+    display: block;
+    width: 100%;
+    border: 2px solid #DF3703;
+
+}
+
+
+.form .form-group label{
+    display: block;
+    font-size: 1.8rem;
+    color:#050709;
+}
+
+.form .form-group label::after{
+    content: '*';
+    color: #DF3703;
+    padding-left: 0.2em;
+}
+
+.form-group{
+    margin-bottom: 1.2em;
+}
+
+.form .form-group input{
+    width: 100%;
+    height: 2.2em;
+    padding: 0em 0.5em;
+}
+
+.form .form-group textarea{
+    height: 16em;
+    width: 100%;
+    padding: 1em;
+}
+
+
+.contact-submit-button{
+    display: block;
+    margin: 0 auto;
+    background-color: #DF3703;
+    color: #f4f4f4;
+    font-size: 1.8em;
+    padding: 0.5em 3em;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############################## media queries ############################## */
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+
+    .navbar .logo, .navbar .nav-items{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .pointer1,
+    .about .pointer2{
+        float: none;
+        width: 100%;
+    }
+
+    .counts .count{
+        float: none;
+        width: 100%;
+    }
+
+    .cta-banner .cta-banner-left,
+    .cta-banner .cta-banner-right{
+        float: none;
+        width: 100%;
+    }
+
+    .form-wrapper .address,
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .form-wrapper .address{
+        margin-bottom: 5em;
+    }
+}
+
+
+
+
+
+@media (min-width: 501px) and (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+
+    p{
+        font-size: 1.8rem;
+    }
+
+    .navbar .logo, .navbar .nav-items{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .pointer1,
+    .about .pointer2{
+        float: none;
+        width: 100%;
+    }
+
+    .counts .count{
+        float: none;
+        width: 100%;
+    }
+
+    .cta-banner .cta-banner-left,
+    .cta-banner .cta-banner-right{
+        float: none;
+        width: 100%;
+    }
+
+    .form-wrapper .address,
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .form-wrapper .address{
+        margin-bottom: 5em;
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1200px){
+    html{
+        font-size: 56.25%;
+    }
+
+    .row .text-box h2{
+        font-size: 2.1rem;
+    }
+}
